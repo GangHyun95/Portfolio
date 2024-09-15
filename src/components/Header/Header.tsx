@@ -14,7 +14,7 @@ export default function Header() {
                     <span className={globals['text-primary']}>Gang</span>hyun
                 </Link>
                 <button className={globals["icon-btn"]} onClick={toggleDarkMode}>
-                    { darkMode ? <HiMiniSun /> : <HiMiniMoon />}
+                    { darkMode ? <HiMiniSun className={globals.icon} /> : <HiMiniMoon className={globals.icon} />}
                 </button>
             </div>
         </header>

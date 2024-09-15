@@ -1,0 +1,68 @@
+.img-holder {
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: var(--radius-circle);
+}
+
+.img-holder .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: var(--weight-semiBold);
+    margin-block: 16px 4px;
+}
+
+.nickname {
+    margin-bottom: 12px;
+}
+
+.intro {
+    margin-block: 12px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-weight: var(--weight-semiBold);
+    border-radius: var(--radius-8);
+    border: 1px solid var(--surface-outline);
+    height: 40px;
+    padding-inline: 24px;
+    background-color: var(--surface);
+    color: var(--primary);
+}
+
+.link:hover {
+    background-color: var(--surface-hover);
+    border-color: var(--surface-outline-hover);
+}
+
+.list {
+    margin-block: 24px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-block: 16px;
+    cursor: pointer;
+}
+
+.item:hover .text {
+    color: var(--primary);
+}
+
+.footer {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid var(--surface-outline);
+}
