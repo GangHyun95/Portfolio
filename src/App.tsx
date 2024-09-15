@@ -1,11 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import { DarkModeProvider } from './context/DarkModeContext';
 
 function App() {
-  return (
-    <div></div>
-  );
+    return (
+        <DarkModeProvider>
+            <Header />
+        </DarkModeProvider>
+    );
 }
 
 export default App;

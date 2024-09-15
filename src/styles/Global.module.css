@@ -1,0 +1,37 @@
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: 32px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.icon-btn {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: var(--surface-variant);
+    border-radius: var(--radius-circle);
+    color: var(--on-background);
+    border: 1px solid var(--surface-variant-outline);
+}
+
+.icon-btn svg {
+    font-size: 24px;
+}
+
+.icon-btn:hover {
+    filter: brightness(0.9);
+    border-color: var(--surface-variant-outline-hover);
+}
