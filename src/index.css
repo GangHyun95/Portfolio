@@ -10,6 +10,8 @@
     --surface-variant-light: #dce0ea;
     --surface-variant-outline-light: #d2d6e0;
     --surface-variant-outline-hover-light: #b4bacb;
+    --color-opacity-50-light: rgba(0, 0, 0, 0.5);
+    --color-opacity-5-light: rgba(0, 0, 0, 0.05);
 
     /* dark */
     --background-dark: #141d2e;
@@ -21,6 +23,8 @@
     --surface-variant-dark: #1f2a47;
     --surface-variant-outline-dark: #233153;
     --surface-variant-outline-hover-dark: #3d588f;
+    --color-opacity-50-dark: rgba(255, 255, 255, 0.5);
+    --color-opacity-5-dark: rgba(255, 255, 255, 0.05);
 
     --weight-regular: 400;
     --weight-medium: 500;
@@ -42,6 +46,8 @@
     --surface-variant: var(--surface-variant-light);
     --surface-variant-outline: var(--surface-variant-outline-light);
     --surface-variant-outline-hover: var(--surface-variant-outline-hover-light);
+    --color-opacity-50: var(--color-opacity-50-light);
+    --color-opacity-5: var(--color-opacity-5-light);
 
 }
 
@@ -55,6 +61,8 @@
     --surface-variant: var(--surface-variant-dark);
     --surface-variant-outline: var(--surface-variant-outline-dark);
     --surface-variant-outline-hover: var(--surface-variant-outline-hover-dark);
+    --color-opacity-50: var(--color-opacity-50-dark);
+    --color-opacity-5: var(--color-opacity-5-dark);
 }
 
 *,

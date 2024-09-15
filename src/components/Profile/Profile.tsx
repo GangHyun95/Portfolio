@@ -14,7 +14,7 @@ export default function Profile() {
             </div>
             <h1 className={styles.name}>허 강 현</h1>
             <p className={`${styles.nickname} ${globals['text-primary']}`}>GangHyun95</p>
-            <p className={styles.intro}>front-end developer</p>
+            <p className={styles.intro}>안녕하세요, 프론트엔드 개발자 허강현입니다. <br/> 항상 새로운 기술을 배우고, 더 나은 코드를 작성하기 위해 끊임없이 노력하고 있습니다.</p>
             <a href="https://github.com/GangHyun95" className={styles.link} target="_blank" rel="noopener noreferrer">
                 <MdOpenInNew className={globals.icon}/>
                 <span>See on Github</span>

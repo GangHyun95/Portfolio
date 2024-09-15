@@ -2,7 +2,7 @@
     width: 280px;
     height: 280px;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--color-opacity-50);
     border-radius: var(--radius-circle);
 }
 
