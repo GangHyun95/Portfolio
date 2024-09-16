@@ -13,17 +13,14 @@
 }
 
 .name {
-    font-size: 1.5rem;
+    font-size: var(--title-2);
     font-weight: var(--weight-semiBold);
     margin-block: 16px 4px;
 }
 
-.nickname {
-    margin-bottom: 12px;
-}
-
+.nickname,
 .intro {
-    margin-block: 12px;
+    margin-bottom: 12px;
 }
 
 .link {
