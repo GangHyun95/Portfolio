@@ -3,11 +3,13 @@
     /* light */
     --background-light: #fff;
     --on-background-light: #141d2e;
+    /*  */
     --surface-light: hsl(225, 100%, 96%);
     --on-surface-light: hsl(221, 11%, 40%);
     --surface-hover-light: hsl(225, 100%, 90%);
     --surface-outline-light: hsl(225, 50%, 92%);
     --surface-outline-hover-light: hsl(225, 49%, 82%);
+    /*  */
     --color-opacity-50-light: rgba(0, 0, 0, 0.5);
     --color-opacity-5-light: rgba(0, 0, 0, 0.05);
 
@@ -37,7 +39,9 @@
     --weight-bold: 700;
 
     /* border-radius */
+    --radius-4: 4px;
     --radius-8: 8px;
+    --radius-12: 12px;
     --radius-pill: 500px;
     --radius-circle: 50%;
 }

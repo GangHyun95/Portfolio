@@ -63,11 +63,11 @@ export default function Projects() {
                     </li>
                 ))}
             </ul>
-            <ul className={styles.list}>
+            <ul className={styles['card-list']}>
                 {filteredProjects?.map((project, index) => (
                     <li
                         key={project.title + index}
-                        className={styles.item}
+                        className={styles['card-item']}
                         onClick={() => openModal(project)}
                     >
                         <div className={styles['img-holder']}>

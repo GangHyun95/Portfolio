@@ -1,0 +1,11 @@
+.heading {
+    font-size: var(--title-2);
+    font-weight: var(--weight-semiBold);
+    text-align: center;
+    margin-bottom: 16px;
+}
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}

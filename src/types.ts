@@ -7,3 +7,11 @@ export interface ProjectType {
     demoLink:    string;
     image:       string;
 }
+
+export interface PostType {
+    categories: string;
+    title: string;
+    description: string;
+    link: string;
+    pubDate: string;
+}
