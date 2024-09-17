@@ -1,7 +1,6 @@
 import React from 'react';
 import globals from '../../styles/Global.module.css';
 import styles from './Profile.module.css';
-import profileImage from '../../assets/images/temp.png'
 import { MdOpenInNew } from "react-icons/md";
 import { SiNotion, SiKakaotalk, SiBlogger } from "react-icons/si";
 import { CiMail } from "react-icons/ci";
@@ -10,7 +9,7 @@ export default function Profile() {
     return (
         <section className={styles.profile}>
             <div className={styles['img-holder']}>
-                <img className={styles.img} src={profileImage} alt="temp"/>
+                <img className={styles.img} src={'/assets/images/temp.png'} alt="profile"/>
             </div>
             <h1 className={styles.name}>허 강 현</h1>
             <p className={`${styles.nickname} ${globals['text-primary']}`}>GangHyun95</p>
