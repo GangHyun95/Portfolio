@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import styles from './Projects.module.css';
 import globals from '../../styles/Global.module.css';
 import { HiArrowRight } from 'react-icons/hi';
@@ -10,6 +10,7 @@ import { ProjectType } from '../../types';
 
 export default function Projects() {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedFilter, setSelectedFilter] = useState('All');
     const defaultProject: ProjectType = {
         type: "",
         title: "",
@@ -39,35 +40,50 @@ export default function Projects() {
         setIsModalOpen(false);
         setSelectedProject(defaultProject);
     };
-    
+
+    const filters = ['All', 'Personal', "Team"];
+    const handleFilterClick = (filter: string) => {
+        setSelectedFilter(filter);
+    };
+
+    const filteredProjects = selectedFilter === "All" 
+        ? projects 
+        : projects?.filter(project => project.type === selectedFilter);
+
     return (
         <section className={globals['tab-panel']}>
             <ul className={styles.filter}>
-                <li className={`${styles['filter-item']} ${styles.active}`}>
-                    All
-                </li>
-                <li className={styles['filter-item']}>Personal</li>
-                <li className={styles['filter-item']}>Team</li>
+                {filters.map(filter => (
+                    <li
+                        key={filter}
+                        className={`${styles['filter-item']} ${selectedFilter === filter ? styles.active : ''}`}
+                        onClick={() => handleFilterClick(filter)}
+                    >
+                        {filter}
+                    </li>
+                ))}
             </ul>
             <ul className={styles.list}>
-                {projects?.map((project,index) => {
-                    return (
-                        <li className={styles.item} data-filter={project.type} key={index} onClick={() => openModal(project)}>
-                            <div className={styles['img-holder']}>
-                                <img
-                                    className={styles.img}
-                                    src={`/assets/images/${project.image}`}
-                                    alt={project.title}
-                                />
-                            </div>
-                            <h2 className={styles.title}>{project.title}</h2>
-                            <button className={styles['demo-btn']}>
-                                <span>More Info </span>
-                                <HiArrowRight className={styles['demo-icon']} />
-                            </button>
-                        </li>
-                    )
-                })}
+                {filteredProjects?.map((project, index) => (
+                    <li
+                        key={project.title + index}
+                        className={styles.item}
+                        onClick={() => openModal(project)}
+                    >
+                        <div className={styles['img-holder']}>
+                            <img
+                                className={styles.img}
+                                src={`/assets/images/${project.image}`}
+                                alt={project.title}
+                            />
+                        </div>
+                        <h2 className={styles.title}>{project.title}</h2>
+                        <button className={styles['demo-btn']}>
+                            <span>More Info </span>
+                            <HiArrowRight className={styles['demo-icon']} />
+                        </button>
+                    </li>
+                    ))}
             </ul>
 
             <Modal isOpen={isModalOpen} onClose={closeModal}>
