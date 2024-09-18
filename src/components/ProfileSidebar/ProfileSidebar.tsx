@@ -1,11 +1,11 @@
 import React from 'react';
 import globals from '../../styles/Global.module.css';
-import styles from './Profile.module.css';
+import styles from './ProfileSidebar.module.css'
 import { MdOpenInNew } from "react-icons/md";
 import { SiNotion, SiKakaotalk, SiBlogger } from "react-icons/si";
 import { CiMail } from "react-icons/ci";
 
-export default function Profile() {
+export default function ProfileSidebar() {
     return (
         <section className={styles.profile}>
             <div className={styles['img-holder']}>

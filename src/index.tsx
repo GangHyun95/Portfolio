@@ -8,6 +8,7 @@ import NotFound from './components/NotFound/NotFound';
 import Projects from './pages/Projects/Projects';
 import Blog from './pages/Blog/Blog';
 import Home from './pages/Home/Home';
+import Profile from './pages/Profile/Profile';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
         children: [
             { index: true, element: <Home /> },
             { path: '/home', element: <Home />},
+            { path: '/profile', element: <Profile />},
             { path: '/projects', element: <Projects /> },
             { path: '/blog', element: <Blog /> },
         ],

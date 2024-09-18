@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import { DarkModeProvider } from './context/DarkModeContext';
-import Profile from './components/Profile/Profile';
+import ProfileSidebar from './components/ProfileSidebar/ProfileSidebar';
 import globals from './styles/Global.module.css';
 import TabList from './components/TabList/TabList';
 import { Outlet } from 'react-router-dom';
@@ -15,7 +15,7 @@ function App() {
             <Header />
             <main>
                 <div className={globals.container}>
-                    <Profile />
+                    <ProfileSidebar />
                     <section>
                         <TabList />
                         <QueryClientProvider client={queryClient}>

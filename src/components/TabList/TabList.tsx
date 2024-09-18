@@ -16,6 +16,12 @@ export default function TabList() {
                 <span>Home</span>
             </NavLink>
             <NavLink
+                to="/profile"
+                className={({ isActive }) => `${styles.item} ${isActive ? styles.active : ''}`}
+            >
+                <span>Profile</span>
+            </NavLink>
+            <NavLink
                 to="/projects"
                 className={({ isActive }) => `${styles.item} ${isActive ? styles.active : ''}`}
             >
@@ -26,12 +32,6 @@ export default function TabList() {
                 className={({ isActive }) => `${styles.item} ${isActive ? styles.active : ''}`}
             >
                 <span>Blog</span>
-            </NavLink>
-            <NavLink
-                to="/temp"
-                className={({ isActive }) => `${styles.item} ${isActive ? styles.active : ''}`}
-            >
-                <span>Temp</span>
             </NavLink>
         </div>
     );
