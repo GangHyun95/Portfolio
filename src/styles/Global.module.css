@@ -1,8 +1,8 @@
 .container {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1280px;
     margin-inline: auto;
-    padding-inline: 40px;
+    padding-inline: 32px;
 }
 
 header .container {
@@ -18,8 +18,7 @@ main {
 main .container {
     display: grid;
     grid-template-columns: 280px 1fr;
-    gap: 40px;
-    flex-grow: 1;
+    gap: 36px;
 }
 
 .text-primary {
@@ -47,5 +46,5 @@ main .container {
 }
 
 .tab-panel {
-    padding-top: 32px;
+    padding-top: 16px;
 }

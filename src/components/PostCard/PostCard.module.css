@@ -6,20 +6,25 @@
     border-radius: var(--radius-12);
     width: 100%;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .card-body {
-    padding: 32px;
+    padding: 24px;
 }
 
 .title {
     font-size: var(--title-3);
     font-weight: var(--weight-semiBold);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
 }
 
 .desc {
     color: var(--on-surface);
-    margin-top: 16px;
+    margin-top: 8px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -32,7 +37,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 32px;
+    padding: 24px;
     color: var(--on-background);
     color: var(--primary);
     background-color: var(--color-opacity-5);

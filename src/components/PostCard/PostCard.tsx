@@ -20,25 +20,23 @@ export default function PostCard({ post }: { post: PostType }) {
     
 
     return (
-        <div>
-            <a
-                href={post.link}
-                target="_blank"
-                className={styles['card-item']}
-                key={post.pubDate}
-            >
-                <div className={styles['card-body']}>
-                    <h3 className={styles.title}>{post.title}</h3>
-                    <p className={styles.desc}>{strText}</p>
+        <a
+            href={post.link}
+            target="_blank"
+            className={styles['card-item']}
+            key={post.pubDate}
+        >
+            <div className={styles['card-body']}>
+                <h3 className={styles.title}>{post.title}</h3>
+                <p className={styles.desc}>{strText}</p>
+            </div>
+            <div className={styles['card-footer']}>
+                <div className={styles.left}>
+                    <p className={styles['footer-item']}>Visit this page</p>
+                    <HiArrowRight className={`${styles['footer-item']} ${styles.icon}`}/>
                 </div>
-                <div className={styles['card-footer']}>
-                    <div className={styles.left}>
-                        <p className={styles['footer-item']}>Visit this page</p>
-                        <HiArrowRight className={`${styles['footer-item']} ${styles.icon}`}/>
-                    </div>
-                    <p>{formattedDate(post.pubDate)}</p>
-                </div>
-            </a>
-        </div>
+                <p>{formattedDate(post.pubDate)}</p>
+            </div>
+        </a>
     );
 }
