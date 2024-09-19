@@ -3,9 +3,9 @@
     width: 100%;
     padding-top: 75%;
     background-color: var(--color-opacity-50);
-    border-radius: 8px;
+    border-radius: var(--radius-8);
     overflow: hidden;
-    margin-bottom: 4px;
+    border: 1px solid var(--surface-outline);
 }
 
 .img {
@@ -25,7 +25,7 @@
 }
 
 .modal-desc {
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
 .link {

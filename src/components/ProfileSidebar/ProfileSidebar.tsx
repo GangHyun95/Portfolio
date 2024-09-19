@@ -45,7 +45,7 @@ export default function ProfileSidebar() {
                 </li>
             </ul>
             <div className={styles.footer}>
-                <p className={styles.copyright}>© 2024. heo gang hyun</p>
+                <p className={styles.copyright}>© 2024. hyun All rights reserved.</p>
             </div>
         </section>
     );

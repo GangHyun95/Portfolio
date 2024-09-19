@@ -21,8 +21,6 @@ export default function Projects() {
         image: ""
     };
     const [selectedProject, setSelectedProject] = useState<ProjectType>(defaultProject);
-    const [imageSrc, setImageSrc] = useState('');
-
     const {isLoading, error, data:projects} = useQuery<ProjectType[]>({
         queryKey: ['projects'],
         queryFn: async () => {

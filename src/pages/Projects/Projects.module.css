@@ -29,7 +29,7 @@
 
 .card-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     gap: 16px;
 }
 
@@ -39,7 +39,7 @@
     min-width: 100%;
     gap: 8px;
     background-color: var(--surface);
-    padding: 20px;
+    padding: 12px;
     border-radius: var(--radius-8);
     cursor: pointer;
     overflow: hidden;
@@ -48,7 +48,7 @@
 .img-holder {
     position: relative;
     width: 100%;
-    padding-top: 75%;
+    padding-top: 56.25%;
     background-color: var(--color-opacity-50);
     border-radius: var(--radius-8);
     overflow: hidden;
