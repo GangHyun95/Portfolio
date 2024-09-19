@@ -33,7 +33,7 @@ export default function Blog() {
 
     return (
         <section className={`${globals['tab-panel']}`}>
-            <h3 className={styles.heading}>Recent Posts</h3>
+            <h3 className={styles.heading}>Recent Posts from blog</h3>
             <div className={styles['card-list']}>
                 {posts &&
                     posts.map((post: PostType, index: number) => <PostCard post={post} key={post.title + index}/>)}

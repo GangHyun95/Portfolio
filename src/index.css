@@ -4,11 +4,11 @@
     --background-light: #fff;
     --on-background-light: #141d2e;
     /*  */
-    --surface-light: hsl(225, 100%, 96%);
-    --on-surface-light: hsl(221, 11%, 40%);
-    --surface-hover-light: hsl(225, 100%, 90%);
-    --surface-outline-light: hsl(225, 50%, 92%);
-    --surface-outline-hover-light: hsl(225, 49%, 82%);
+    --surface-light: #ebf0ff;
+    --on-surface-light: #5b6271;
+    --surface-hover-light: #ccd9ff;
+    --surface-outline-light: #e0e6f5;
+    --surface-outline-hover-light: #bbc6e8;
     /*  */
     --color-opacity-50-light: rgba(0, 0, 0, 0.5);
     --color-opacity-5-light: rgba(0, 0, 0, 0.05);
@@ -16,11 +16,11 @@
     /* dark */
     --background-dark: #141d2e;
     --on-background-dark: #fff;
-    --surface-dark: hsl(223, 40%, 17%);
-    --on-surface-dark: hsl(223, 23%, 61%);
-    --surface-hover-dark: hsl(223, 40%, 21%);
-    --surface-outline-dark: hsl(223, 40%, 20%);
-    --surface-outline-hover-dark: hsl(223, 40%, 40%);
+    --surface-dark: #1a243d;
+    --on-surface-dark: #8592b2;
+    --surface-hover-dark: #202c4b;
+    --surface-outline-dark: #1f2a47;
+    --surface-outline-hover-dark: #3d548f;
     --color-opacity-50-dark: rgba(255, 255, 255, 0.5);
     --color-opacity-5-dark: rgba(255, 255, 255, 0.05);
 
@@ -113,7 +113,6 @@ button { cursor: pointer; }
 
 body {
     margin: 0;
-    padding-block: 96px 32px;
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
         "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
         "Helvetica Neue", sans-serif;
@@ -130,8 +129,16 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-block: 96px 32px;
 }
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
+}
+
+::-webkit-scrollbar { width: 8px; }
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-opacity-50);
+    border-radius: var(--radius-pill);
 }

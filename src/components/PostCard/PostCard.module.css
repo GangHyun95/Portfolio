@@ -44,7 +44,7 @@
 }
 
 .footer-item {
-    transition: 0.3s;
+    transition: font-weight 0.3s, transform 0.3s;
 }
 
 .icon {

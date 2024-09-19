@@ -6,7 +6,7 @@
         "blogLink": "https://hy-un.tistory.com/category/React/Calendar%20Todo",
         "skills": "React, TypeScript, CSS Modules, Context API",
         "demoLink": "https://calendar-todo-roan.vercel.app/",
-        "image": ""
+        "image": "Frame 4.png"
     },
     {
         "type": "Personal",
@@ -15,7 +15,7 @@
         "blogLink": "https://hy-un.tistory.com/category/React/Youtube",
         "skills": "React, TypeScript, CSS Modules, Axios, React Query, Context API",
         "demoLink": "https://youtube-xi-nine.vercel.app/",
-        "image": ""
+        "image": "Frame 3.png"
     },
     {
         "type": "Personal",
@@ -24,6 +24,6 @@
         "blogLink": "https://hy-un.tistory.com/category/React/Weather",
         "skills": "React, TypeScript, CSS Modules, Axios, React Query, Recoil",
         "demoLink": "https://weather-kappa-gules.vercel.app/",
-        "image": ""
+        "image": "Frame 1.png"
     }
 ]

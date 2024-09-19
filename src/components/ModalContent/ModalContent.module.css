@@ -55,14 +55,13 @@
     cursor: pointer;
     font-weight: var(--weight-semiBold);
     border-radius: var(--radius-8);
-    border: 1px solid var(--surface-outline);
     height: 40px;
     padding-inline: 24px;
-    background-color: var(--surface);
-    color: var(--primary);
+    background-color: var(--on-background);
+    color: var(--background);
+    transition: color 0.3s;
 }
 
 .view-demo-btn:hover {
-    background-color: var(--surface-hover);
-    border-color: var(--surface-outline-hover);
+    color: var(--primary);
 }
