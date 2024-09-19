@@ -59,7 +59,14 @@ export default function Home() {
                     </g>
                 </svg>
                 <p className={styles.heading}>Hello World! <br/> </p>
-                <p className={styles.heading}>I work with <span className={globals['text-primary']}>{displayText}</span><span className={styles.cursor}>|</span></p>
+                <div className={styles.heading}>
+                    <p>I work with</p>
+                    <div>
+                        <span className={globals['text-primary']}>
+                            {displayText}
+                        </span>
+                        <span className={styles.cursor}>|</span></div>
+                    </div>
                 <div className={styles.links}>
                     <Link to='/projects' className={styles.link}>View Works</Link>
                     <Link to='/profile' className={styles.link}>About me</Link>

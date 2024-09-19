@@ -50,3 +50,20 @@ main .container {
 .tab-panel {
     padding-top: 24px;
 }
+
+
+@media screen and (max-width: 992px) {
+    main .container {
+        grid-template-columns: 240px 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding-inline: 16px;
+    }
+    
+    main .container {
+        display: block;
+    }
+}
