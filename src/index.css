@@ -1,5 +1,6 @@
 :root {
     --primary: #0079FF;
+    --header-height: 80px;
     /* light */
     --background-light: #fff;
     --on-background-light: #141d2e;
@@ -129,7 +130,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    padding-block: 96px 32px;
+    padding-block: calc(var(--header-height) + 16px) 32px;
 }
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -141,4 +142,14 @@ code {
 ::-webkit-scrollbar-thumb {
     background-color: var(--color-opacity-50);
     border-radius: var(--radius-pill);
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --header-height: 72px;
+    }
+
+    #root {
+        padding-block: var(--header-height) 16px;
+    }
 }

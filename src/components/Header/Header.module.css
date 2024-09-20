@@ -6,7 +6,7 @@
     background-color: var(--background);
     display: flex;
     align-items: center;
-    height: 80px;
+    height: var(--header-height);
     background-color: var(--background);
     z-index: 4;
     transition: background-color 0.3s;

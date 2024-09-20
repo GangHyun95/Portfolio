@@ -5,8 +5,10 @@
     right: 0;
     bottom: 0;
     background-color: var(--color-opacity-50);
-    display: grid;
-    place-items: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-inline: 16px;
     z-index: 10;
     opacity: 0;
@@ -29,7 +31,8 @@
 
 .modal-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(307px, 1fr));
     column-gap: 3rem;
     align-items: center;
 }
@@ -40,4 +43,26 @@
     right: 24px;
     font-size: 24px;
     color: var(--primary);
+}
+
+@media screen and (max-width:900px) {
+    .modal-inner {
+        padding: 32px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .modal-inner {
+        width: 420px;
+        padding: 45px 24px 40px;
+    }
+
+    .modal-content {
+        gap: 16px;
+    }
+
+    .close {
+        top: 12px;
+        right: 14px;
+    }
 }

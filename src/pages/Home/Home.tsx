@@ -65,8 +65,9 @@ export default function Home() {
                         <span className={globals['text-primary']}>
                             {displayText}
                         </span>
-                        <span className={styles.cursor}>|</span></div>
+                        <span className={styles.cursor}>|</span>
                     </div>
+                </div>
                 <div className={styles.links}>
                     <Link to='/projects' className={styles.link}>View Works</Link>
                     <Link to='/profile' className={styles.link}>About me</Link>

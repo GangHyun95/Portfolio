@@ -39,7 +39,7 @@
 }
 
 .modal-skils {
-    line-height: 1.7;
+    line-height: 1.6;
     margin-block: 8px;
     color: var(--on-background);
 }
@@ -65,3 +65,15 @@
 .view-demo-btn:hover {
     color: var(--primary);
 }
+
+@media screen and (max-width: 900px) {
+    :root {
+        --title-2: 20px;
+        --label-1: 13px;
+    }
+
+    .view-demo-btn {
+        height: 36px;
+    }
+}
+

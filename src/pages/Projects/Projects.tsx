@@ -7,6 +7,7 @@ import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import ModalContent from '../../components/ModalContent/ModalContent';
 import { ProjectType } from '../../types';
+import Loading from '../../components/Loading/Loading';
 
 export default function Projects() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,7 +22,7 @@ export default function Projects() {
         image: ""
     };
     const [selectedProject, setSelectedProject] = useState<ProjectType>(defaultProject);
-    const {isLoading, error, data:projects} = useQuery<ProjectType[]>({
+    const {isLoading, data:projects} = useQuery<ProjectType[]>({
         queryKey: ['projects'],
         queryFn: async () => {
             const response = await axios.get("/data/projects.json");
@@ -50,42 +51,46 @@ export default function Projects() {
 
     return (
         <section className={globals['tab-panel']}>
-            <ul className={styles.filter}>
-                {filters.map(filter => (
-                    <li
-                        key={filter}
-                        className={`${styles['filter-item']} ${selectedFilter === filter ? styles.active : ''}`}
-                        onClick={() => handleFilterClick(filter)}
-                    >
-                        {filter}
-                    </li>
-                ))}
-            </ul>
-            <ul className={styles['card-list']}>
-                {filteredProjects?.map((project, index) => (
-                    <li
-                        key={project.title + index}
-                        className={styles['card-item']}
-                        onClick={() => openModal(project)}
-                    >
-                        <div className={styles['img-holder']}>
-                            <img
-                                className={styles.img}
-                                src={`/assets/images/${project.image}`}
-                                alt={project.title}
-                            />
-                        </div>
-                        <h2 className={styles.title}>{project.title}</h2>
-                        <button className={styles['demo-btn']}>
-                            <span>More Info </span>
-                            <HiArrowRight className={styles['demo-icon']} />
-                        </button>
-                    </li>
-                    ))}
-            </ul>
-
+            {isLoading && <Loading />}
+            {!isLoading && (
+                <>
+                    <ul className={styles.filter}>
+                        {filters.map(filter => (
+                            <li
+                                key={filter}
+                                className={`${styles['filter-item']} ${selectedFilter === filter ? styles.active : ''}`}
+                                onClick={() => handleFilterClick(filter)}
+                            >
+                                {filter}
+                            </li>
+                        ))}
+                    </ul>
+                    <ul className={styles['card-list']}>
+                        {filteredProjects?.map((project, index) => (
+                            <li
+                                key={project.title + index}
+                                className={styles['card-item']}
+                                onClick={() => openModal(project)}
+                            >
+                                <div className={styles['img-holder']}>
+                                    <img
+                                        className={styles.img}
+                                        src={`/assets/images/${project.image}`}
+                                        alt={project.title}
+                                    />
+                                </div>
+                                <h2 className={styles.title}>{project.title}</h2>
+                                <button className={styles['demo-btn']}>
+                                    <span>More Info </span>
+                                    <HiArrowRight className={styles['demo-icon']} />
+                                </button>
+                            </li>
+                        ))}
+                    </ul>
+                </>
+            )}
             <Modal isOpen={isModalOpen} onClose={closeModal}>
-                <ModalContent project={selectedProject}/>
+                <ModalContent project={selectedProject} />
             </Modal>
         </section>
     );

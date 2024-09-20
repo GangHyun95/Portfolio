@@ -6,7 +6,7 @@
         "blogLink": "https://hy-un.tistory.com/category/React/Calendar%20Todo",
         "skills": "React, TypeScript, CSS Modules, Context API",
         "demoLink": "https://calendar-todo-roan.vercel.app/",
-        "image": "Frame 4.png"
+        "image": "todo.png"
     },
     {
         "type": "Personal",
@@ -15,7 +15,7 @@
         "blogLink": "https://hy-un.tistory.com/category/React/Youtube",
         "skills": "React, TypeScript, CSS Modules, Axios, React Query, Context API",
         "demoLink": "https://youtube-xi-nine.vercel.app/",
-        "image": "Frame 3.png"
+        "image": "youtube.png"
     },
     {
         "type": "Personal",
@@ -24,41 +24,42 @@
         "blogLink": "https://hy-un.tistory.com/category/React/Weather",
         "skills": "React, TypeScript, CSS Modules, Axios, React Query, Recoil",
         "demoLink": "https://weather-kappa-gules.vercel.app/",
-        "image": "Frame 1.png"
+        "image": "weather.png"
     },
     {
         "type": "Personal",
         "title": "Portfolio Web",
-        "description": "Portfolio 페이지입니다 현재 보고 있는 페이지입니다. rss를 이용하여 티스토리 블로그 글을 가져와서 표시해주었습니다.",
-        "blogLink": "https://hy-un.tistory.com/category/React/Weather",
+        "description": "Portfolio 페이지",
+        "blogLink": "https://hy-un.tistory.com/category/React/Portfolio",
         "skills": "React, TypeScript, CSS Modules, Axios, React Query, Context API",
-        "demoLink": "https://weather-kappa-gules.vercel.app/",
-        "image": "Frame 1.png"
+        "demoLink": "",
+        "image": ""
     },
     {
-        "type": "Team",
-        "title": "Portfolio Web",
-        "description": "Portfolio 페이지입니다 현재 보고 있는 페이지입니다. rss를 이용하여 티스토리 블로그 글을 가져와서 표시해주었습니다.",
-        "blogLink": "https://hy-un.tistory.com/category/React/Weather",
-        "skills": "React, TypeScript, CSS Modules, Axios, React Query, Context API",
-        "demoLink": "https://weather-kappa-gules.vercel.app/",
-        "image": "Frame 1.png"
-    },{
-        "type": "Team",
-        "title": "Portfolio Web",
-        "description": "Portfolio 페이지입니다 현재 보고 있는 페이지입니다. rss를 이용하여 티스토리 블로그 글을 가져와서 표시해주었습니다.",
-        "blogLink": "https://hy-un.tistory.com/category/React/Weather",
-        "skills": "React, TypeScript, CSS Modules, Axios, React Query, Context API",
-        "demoLink": "https://weather-kappa-gules.vercel.app/",
-        "image": "Frame 1.png"
+        "type": "Team1",
+        "title": "",
+        "description": "",
+        "blogLink": "",
+        "skills": "",
+        "demoLink": "",
+        "image": ""
     },
     {
-        "type": "Team",
-        "title": "Portfolio Web",
-        "description": "Portfolio 페이지입니다 현재 보고 있는 페이지입니다. rss를 이용하여 티스토리 블로그 글을 가져와서 표시해주었습니다.",
-        "blogLink": "https://hy-un.tistory.com/category/React/Weather",
-        "skills": "React, TypeScript, CSS Modules, Axios, React Query, Context API",
-        "demoLink": "https://weather-kappa-gules.vercel.app/",
-        "image": "Frame 1.png"
+        "type": "Team2",
+        "title": "",
+        "description": "",
+        "blogLink": "",
+        "skills": "",
+        "demoLink": "",
+        "image": ""
+    },
+    {
+        "type": "Team3",
+        "title": "",
+        "description": "",
+        "blogLink": "",
+        "skills": "",
+        "demoLink": "",
+        "image": ""
     }
 ]

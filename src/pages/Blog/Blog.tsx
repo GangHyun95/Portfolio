@@ -4,6 +4,7 @@ import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import PostCard from '../../components/PostCard/PostCard';
 import { PostType } from '../../types';
+import Loading from '../../components/Loading/Loading';
 
 export default function Blog() {
     const rssUrl = encodeURIComponent('https://hy-un.tistory.com/rss');
@@ -11,7 +12,6 @@ export default function Blog() {
 
     const {
         isLoading,
-        error,
         data: posts,
     } = useQuery({
         queryKey: ['posts'],
@@ -28,15 +28,17 @@ export default function Blog() {
         refetchOnReconnect: false,
     });
 
-    if (isLoading) return <p>Loading...</p>;
-    if (error) return <p>Error: {error.message}</p>;
 
     return (
         <section className={`${globals['tab-panel']}`}>
-            <div className={styles['card-list']}>
-                {posts &&
-                    posts.map((post: PostType, index: number) => <PostCard post={post} key={post.title + index}/>)}
-            </div>
+            {isLoading && <Loading />}
+            {!isLoading && posts && (
+                <div className={styles['card-list']}>
+                    {posts.map((post: PostType, index: number) => (
+                        <PostCard post={post} key={post.title + index} />
+                    ))}
+                </div>
+            )}
         </section>
     );
 }
