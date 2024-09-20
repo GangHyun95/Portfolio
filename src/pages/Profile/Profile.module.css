@@ -54,7 +54,7 @@
 }
 
 .period {
-    font-size: var(--label-2);
+    font-size: var(--label-1);
     color: var(--primary);
 }
 
@@ -105,9 +105,5 @@
 @media screen and (max-width:768px) {
     .header-title {
         font-size: var(--title-2);
-    }
-
-    .header-desc {
-        --body: 14px;
     }
 }

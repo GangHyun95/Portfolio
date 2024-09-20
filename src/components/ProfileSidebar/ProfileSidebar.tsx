@@ -1,13 +1,38 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import globals from '../../styles/Global.module.css';
 import styles from './ProfileSidebar.module.css'
 import { MdOpenInNew } from "react-icons/md";
 import { SiNotion, SiKakaotalk, SiBlogger } from "react-icons/si";
 import { CiMail } from "react-icons/ci";
+import { useLocation, useNavigationType } from 'react-router-dom';
 
 export default function ProfileSidebar() {
+    const location = useLocation();
+    
+    const navigationType = useNavigationType();
+    const ref = useRef<HTMLDivElement>(null);
+    const [paddingTop, setPaddingTop] = useState(0);
+
+    useEffect(() => {
+        const root = document.querySelector("#root");
+        if (root) {
+            setPaddingTop(parseInt(window.getComputedStyle(root).paddingTop, 10));
+        }
+    }, []);
+
+    useEffect(() => {
+        if (window.innerWidth <= 768 && navigationType === 'PUSH' && ref.current) {
+            
+            const bottom = ref.current.getBoundingClientRect().bottom + window.scrollY - paddingTop;
+            window.scrollTo({
+                top: bottom,
+                behavior: 'smooth',
+            });
+        }
+    }, [location.pathname, navigationType]);
+
     return (
-        <section className={styles.profile}>
+        <section className={styles.profile} ref={ref}>
             <div className={styles['img-holder']}>
                 <img className={styles.img} src={'/assets/images/tempprofile.webp'} alt="profile"/>
             </div>
@@ -53,7 +78,7 @@ export default function ProfileSidebar() {
                 </li>
             </ul>
             <div className={styles.footer}>
-                <p className={styles.copyright}>© 2024. hyun All rights reserved.</p>
+                <p className={globals.copyright}>© 2024. hyun All rights reserved.</p>
             </div>
         </section>
     );

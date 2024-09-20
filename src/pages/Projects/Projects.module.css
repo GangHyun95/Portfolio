@@ -8,7 +8,7 @@
     cursor: pointer;
     position: relative;
     color: var(--on-surface);
-    font-size: var(--label-2);
+    font-size: var(--label-1);
     border: 1px solid var(--surface-outline);
     padding: 4px 12px;
     border-radius: var(--radius-4);
@@ -63,6 +63,7 @@
     align-items: center;
     gap: 4px;
     color: var(--primary);
+    font-size: var(--label-1);
     transition: 0.3s;
 }
 

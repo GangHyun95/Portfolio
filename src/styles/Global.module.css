@@ -63,6 +63,10 @@ main .container {
     transform: translateZ(0);
 }
 
+.copyright {
+    font-size: var(--label-1);
+}
+
 
 @media screen and (max-width: 992px) {
     main .container {

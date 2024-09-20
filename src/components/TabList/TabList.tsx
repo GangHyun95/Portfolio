@@ -8,7 +8,7 @@ export default function TabList() {
     const isRoot = location.pathname === '/';
 
     return (
-        <div className={styles.list}>
+        <nav className={styles.list}>
             <NavLink
                 to="/home"
                 className={({ isActive }) => `${styles.item} ${(isActive || isRoot) ? styles.active : ''}`}
@@ -33,6 +33,6 @@ export default function TabList() {
             >
                 <span>Blog</span>
             </NavLink>
-        </div>
+        </nav>
     );
 }
