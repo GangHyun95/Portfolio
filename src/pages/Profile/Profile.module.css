@@ -101,3 +101,13 @@
 .skill-img {
     width: 28px;
 }
+
+@media screen and (max-width:768px) {
+    .header-title {
+        font-size: var(--title-2);
+    }
+
+    .header-desc {
+        --body: 14px;
+    }
+}
