@@ -14,25 +14,6 @@ export default function Modal({ isOpen, onClose, children }: ModalProps) {
             onClose();
         }
     };
-    
-    const preventScroll = (e: TouchEvent) => {
-        e.preventDefault();
-    };
-
-    useEffect(() => {
-        if (isOpen) {
-            document.body.style.overflow = "hidden";
-            document.addEventListener("touchmove", preventScroll, { passive: false });
-        } else {
-            document.body.style.overflow = "";
-            document.removeEventListener("touchmove", preventScroll);
-        }
-
-        return () => {
-            document.body.style.overflow = "";
-            document.removeEventListener("touchmove", preventScroll);
-        };
-    }, [isOpen]);
 
     return (
         <div
