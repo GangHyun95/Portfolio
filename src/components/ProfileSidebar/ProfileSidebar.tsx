@@ -20,28 +20,36 @@ export default function ProfileSidebar() {
             </a>
             <ul className={styles.list}>
                 <li className={styles.item}>
-                    <span className={globals.icon}>
-                        <SiBlogger />
-                    </span>
-                    <span className={styles.text}>hy-un blog</span>
+                    <a className={styles.a} href="https://hy-un.tistory.com/" target='_blank'>
+                        <span className={globals.icon}>
+                            <SiBlogger />
+                        </span>
+                        <span className={styles.text}>hy-un blog</span>
+                    </a>
+                </li>
+                {/* <li className={styles.item}>
+                    <a className={styles.a} href="" target='_blank'>
+                        <span className={globals.icon}>
+                            <SiNotion />
+                        </span>
+                        <span className={styles.text}>notion</span>
+                    </a>
+                </li> */}
+                <li className={styles.item}>
+                    <a className={styles.a} href="https://open.kakao.com/o/shH7fUPg" target='_blank'>
+                        <span className={globals.icon}>
+                            <SiKakaotalk />
+                        </span>
+                        <span className={styles.text}>kakao open chat</span>
+                    </a>
                 </li>
                 <li className={styles.item}>
-                    <span className={globals.icon}>
-                        <SiNotion />
-                    </span>
-                    <span className={styles.text}>notion</span>
-                </li>
-                <li className={styles.item}>
-                    <span className={globals.icon}>
-                        <SiKakaotalk />
-                    </span>
-                    <span className={styles.text}>kakao open chat</span>
-                </li>
-                <li className={styles.item}>
-                    <span className={globals.icon}>
-                        <CiMail />
-                    </span>
-                    <span className={styles.text}>hgh6128@gmail.com</span>
+                    <a className={styles.a} href="mailto:hgh6128@gmail.com">
+                        <span className={globals.icon}>
+                            <CiMail />
+                        </span>
+                        <span className={styles.text}>hgh6128@gmail.com</span>
+                    </a>
                 </li>
             </ul>
             <div className={styles.footer}>

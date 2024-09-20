@@ -36,8 +36,8 @@
         "image": ""
     },
     {
-        "type": "Team1",
-        "title": "",
+        "type": "Team",
+        "title": "Team1",
         "description": "",
         "blogLink": "",
         "skills": "",
@@ -45,8 +45,8 @@
         "image": ""
     },
     {
-        "type": "Team2",
-        "title": "",
+        "type": "Team",
+        "title": "Team2",
         "description": "",
         "blogLink": "",
         "skills": "",
@@ -54,8 +54,8 @@
         "image": ""
     },
     {
-        "type": "Team3",
-        "title": "",
+        "type": "Team",
+        "title": "Team3",
         "description": "",
         "blogLink": "",
         "skills": "",

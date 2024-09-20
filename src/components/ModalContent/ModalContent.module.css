@@ -67,11 +67,6 @@
 }
 
 @media screen and (max-width: 900px) {
-    :root {
-        --title-2: 20px;
-        --label-1: 13px;
-    }
-
     .view-demo-btn {
         height: 36px;
     }

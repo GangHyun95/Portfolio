@@ -5,7 +5,6 @@
     right: 0;
     bottom: 0;
     background-color: var(--color-opacity-50);
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,6 +26,7 @@
     width: 900px;
     border-radius: var(--radius-8);
     padding: 40px;
+    font-size: var(--label-1);
 }
 
 .modal-content {
@@ -47,6 +47,8 @@
 
 @media screen and (max-width:900px) {
     .modal-inner {
+        --title-2: 20px;
+        --label-1: 13px;
         padding: 32px;
     }
 }
