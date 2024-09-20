@@ -2,7 +2,6 @@
     position: relative;
     width: 100%;
     padding-top: 75%;
-    background-color: var(--color-opacity-50);
     border-radius: var(--radius-8);
     overflow: hidden;
     border: 1px solid var(--surface-outline);
