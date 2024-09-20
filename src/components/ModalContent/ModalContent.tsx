@@ -7,7 +7,7 @@ export default function ModalContent({ project }: {project: ProjectType}) {
     return (
         <>
             <div className={styles['img-holder']}>
-                <img className={styles.img} src={`/assets/images/${project.image}`} alt="" />
+                <img className={globals['absolute-img']} src={`/assets/images/${project.image}`} alt="" />
             </div>
             <div className={styles.right}>
                 <h2 className={styles['modal-title']}>{project.title}</h2>

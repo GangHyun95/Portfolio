@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Modal.module.css";
 import { IoMdClose } from "react-icons/io";
 
@@ -15,6 +15,18 @@ export default function Modal({ isOpen, onClose, children }: ModalProps) {
             onClose();
         }
     };
+
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, [isOpen]);
 
     return (
         <div

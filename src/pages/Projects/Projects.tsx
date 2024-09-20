@@ -74,7 +74,7 @@ export default function Projects() {
                             >
                                 <div className={styles['img-holder']}>
                                     <img
-                                        className={styles.img}
+                                        className={globals['absolute-img']}
                                         src={`/assets/images/${project.image}`}
                                         alt={project.title}
                                     />
