@@ -8,6 +8,8 @@
 }
 
 .modal-title {
+    display: flex;
+    flex-direction: column;
     font-size: var(--title-2);
     color: var(--on-background);
     font-weight: var(--weight-semiBold);
@@ -64,6 +66,9 @@
     color: var(--primary);
 }
 
+.label {
+    font-size: var(--label-1);
+}
 @media screen and (max-width: 900px) {
     .btn {
         height: 36px;

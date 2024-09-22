@@ -42,6 +42,7 @@
     {
         "type": "Team",
         "title": "저기요(배달주문 웹 사이트)",
+        "period" : "23.01.09 - 23.02.05",
         "description": "백엔드와의 협업 프로젝트로, 백엔드에서 제공한 REST API를 활용해 요기요를 벤치마킹한 배달 주문 웹사이트를 개발했습니다. \n프론트엔드에서 장바구니, 상세 페이지, 리뷰 작성 및 삭제 기능을 구현했습니다.",
         "blogLink": "",
         "skills": "React, Redux Toolkit, Tailwind CSS",
@@ -53,6 +54,7 @@
     {
         "type": "Team",
         "title": "BON VOYAGE(여행일정 웹사이트)",
+        "period": "23.02.07 - 23.03.03",
         "description": "백엔드와의 협업 프로젝트로, 백엔드에서 제공한 REST API를 활용해 여행 일정 웹사이트를 개발했습니다. \n프론트엔드에서 메인 페이지, 좋아요 및 취소 기능, 지도 관련 기능을 구현했습니다.",
         "blogLink": "",
         "skills": "React, Tailwind Css, KakaoMap Api",
@@ -64,6 +66,7 @@
     {
         "type": "Team",
         "title": "쿨피스(체력 관리 서비스)",
+        "period": "23.03.06 - 23.04.05",
         "description": "백엔드와의 협업 프로젝트로, 백엔드에서 제공한 REST API를 활용해 학생들을 위한 체력 관리 서비스를 개발했습니다. \n프론트엔드에서 전반적인 회원 관련 페이지와 기능과 메인 페이지를 구현했습니다.",
         "blogLink": "",
         "skills": "React, Recoil, Tailwind CSS",

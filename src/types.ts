@@ -8,6 +8,7 @@ export interface ProjectType {
     image:       string;
     githubLink:  string;
     youtubeLink: string;
+    period?:     string;
 }
 
 export interface PostType {

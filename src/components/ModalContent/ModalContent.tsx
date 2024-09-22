@@ -10,7 +10,12 @@ export default function ModalContent({ project }: {project: ProjectType}) {
                 <img className={globals['absolute-img']} src={`/assets/images/${project.image}`} alt="" />
             </div>
             <div className={styles.right}>
-                <h2 className={styles['modal-title']}>{project.title}</h2>
+                <h2 className={styles['modal-title']}>
+                    {project.title}
+                    {project.period && (
+                        <span className={`${globals['text-primary']} ${styles.label}`}>{project.period}</span>
+                    )}
+                </h2>
                 <div className={styles['modal-desc']}>
                     {project.description.split('\n').map((line, index) => (
                         <p key={index}>

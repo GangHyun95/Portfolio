@@ -22,6 +22,7 @@ export default function Projects() {
         image: "",
         githubLink: "",
         youtubeLink: "",
+        period: "",
     };
     const [selectedProject, setSelectedProject] = useState<ProjectType>(defaultProject);
     const {isLoading, data:projects} = useQuery<ProjectType[]>({
