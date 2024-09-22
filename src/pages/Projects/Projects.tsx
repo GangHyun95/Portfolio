@@ -19,7 +19,9 @@ export default function Projects() {
         blogLink: "",
         skills: "",
         demoLink: "",
-        image: ""
+        image: "",
+        githubLink: "",
+        youtubeLink: "",
     };
     const [selectedProject, setSelectedProject] = useState<ProjectType>(defaultProject);
     const {isLoading, data:projects} = useQuery<ProjectType[]>({

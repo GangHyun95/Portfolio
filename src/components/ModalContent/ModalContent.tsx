@@ -36,9 +36,21 @@ export default function ModalContent({ project }: {project: ProjectType}) {
                         <p className={styles.skill}>{project.skills}</p>
                     </ul>
                 </div>
-                <a href={project.demoLink} target="_blank" className={styles['view-demo-btn']}>
-                    <p>View Demo</p>
-                </a>
+                <div className={styles.btns}>
+                    <a href={project.githubLink} target='_blank' className={styles.btn}>
+                        <p>Github</p>
+                    </a>
+                    {project.demoLink && (
+                        <a href={project.demoLink} target="_blank" className={styles.btn}>
+                            <p>View Demo</p>
+                        </a>
+                    )}
+                    {project.youtubeLink && (
+                        <a href={project.youtubeLink} target="_blank" className={styles.btn}>
+                            <p>시연 영상 보기</p>
+                        </a>
+                    )}
+                </div>
             </div>
         </>
     );

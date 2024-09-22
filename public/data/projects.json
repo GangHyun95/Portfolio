@@ -6,6 +6,7 @@
         "blogLink": "https://hy-un.tistory.com/category/React/Calendar%20Todo",
         "skills": "React, TypeScript, CSS Modules, Context API",
         "demoLink": "https://calendar-todo-roan.vercel.app/",
+        "githubLink": "https://github.com/GangHyun95/calendar-todo",
         "image": "todo.png"
     },
     {
@@ -15,6 +16,7 @@
         "blogLink": "https://hy-un.tistory.com/category/React/Youtube",
         "skills": "React, TypeScript, CSS Modules, Axios, React Query, Context API",
         "demoLink": "https://youtube-xi-nine.vercel.app/",
+        "githubLink": "https://github.com/GangHyun95/youtube",
         "image": "youtube.png"
     },
     {
@@ -24,42 +26,50 @@
         "blogLink": "https://hy-un.tistory.com/category/React/Weather",
         "skills": "React, TypeScript, CSS Modules, Axios, React Query, Recoil",
         "demoLink": "https://weather-kappa-gules.vercel.app/",
+        "githubLink": "",
         "image": "weather.png"
     },
     {
         "type": "Personal",
         "title": "Portfolio Web",
-        "description": "Portfolio 페이지",
+        "description": "이 프로젝트는 현재 보고 계신 포트폴리오 사이트입니다. \nTistory의 RSS 피드를 이용해 최신 블로그 글을 자동으로 표시하고 있으며, 반응형으로 설계되었습니다.",
         "blogLink": "https://hy-un.tistory.com/category/React/Portfolio",
         "skills": "React, TypeScript, CSS Modules, Axios, React Query, Context API",
-        "demoLink": "",
-        "image": ""
+        "demoLink": "https://portfolio-hyuns-projects-836af3ba.vercel.app/",
+        "githubLink": "https://github.com/GangHyun95/portfolio",
+        "image": "portfolio.png"
     },
     {
         "type": "Team",
-        "title": "Team1",
-        "description": "",
+        "title": "저기요(배달주문 웹 사이트)",
+        "description": "백엔드와의 협업 프로젝트로, 백엔드에서 제공한 REST API를 활용해 요기요를 벤치마킹한 배달 주문 웹사이트를 개발했습니다. \n프론트엔드에서 장바구니, 상세 페이지, 리뷰 작성 및 삭제 기능을 구현했습니다.",
         "blogLink": "",
-        "skills": "",
+        "skills": "React, Redux Toolkit, Tailwind CSS",
         "demoLink": "",
-        "image": ""
+        "githubLink": "https://github.com/GangHyun95/project_yogiyo",
+        "youtubeLink": "https://www.youtube.com/watch?v=l4c_RrM14EM",
+        "image": "yogiyo.png"
     },
     {
         "type": "Team",
-        "title": "Team2",
-        "description": "",
+        "title": "BON VOYAGE(여행일정 웹사이트)",
+        "description": "백엔드와의 협업 프로젝트로, 백엔드에서 제공한 REST API를 활용해 여행 일정 웹사이트를 개발했습니다. \n프론트엔드에서 메인 페이지, 좋아요 및 취소 기능, 지도 관련 기능을 구현했습니다.",
         "blogLink": "",
-        "skills": "",
+        "skills": "React, Tailwind Css, KakaoMap Api",
         "demoLink": "",
-        "image": ""
+        "githubLink": "https://github.com/GangHyun95/BON-VOYAGE",
+        "youtubeLink": "https://www.youtube.com/watch?v=ePmlGtwn984",
+        "image": "bonvoyage.png"
     },
     {
         "type": "Team",
-        "title": "Team3",
-        "description": "",
+        "title": "쿨피스(체력 관리 서비스)",
+        "description": "백엔드와의 협업 프로젝트로, 백엔드에서 제공한 REST API를 활용해 학생들을 위한 체력 관리 서비스를 개발했습니다. \n프론트엔드에서 전반적인 회원 관련 페이지와 기능과 메인 페이지를 구현했습니다.",
         "blogLink": "",
-        "skills": "",
+        "skills": "React, Recoil, Tailwind CSS",
         "demoLink": "",
-        "image": ""
+        "githubLink": "https://github.com/GangHyun95/schoolfitness",
+        "youtubeLink": "https://www.youtube.com/watch?v=hLS2y7jnayA",
+        "image": "fitness.png"
     }
 ]

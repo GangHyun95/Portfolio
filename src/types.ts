@@ -6,6 +6,8 @@ export interface ProjectType {
     skills:      string;
     demoLink:    string;
     image:       string;
+    githubLink:  string;
+    youtubeLink: string;
 }
 
 export interface PostType {

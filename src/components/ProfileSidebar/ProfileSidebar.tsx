@@ -34,7 +34,7 @@ export default function ProfileSidebar() {
     return (
         <section className={styles.profile} ref={ref}>
             <div className={styles['img-holder']}>
-                <img className={styles.img} src={'/assets/images/tempprofile.webp'} alt="profile"/>
+                <img className={styles.img} src={'/assets/images/tempprofile.png'} alt="profile"/>
             </div>
             <h1 className={styles.name}>허 강 현</h1>
             <p className={`${styles.nickname} ${globals['text-primary']}`}>GangHyun95</p>

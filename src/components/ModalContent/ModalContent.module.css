@@ -38,7 +38,15 @@
     color: var(--primary);
 }
 
-.view-demo-btn {
+.btns {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,15 +58,14 @@
     background-color: var(--on-background);
     color: var(--background);
     transition: color 0.3s;
-    margin-top: 8px;
 }
 
-.view-demo-btn:hover {
+.btn:hover {
     color: var(--primary);
 }
 
 @media screen and (max-width: 900px) {
-    .view-demo-btn {
+    .btn {
         height: 36px;
     }
 }
