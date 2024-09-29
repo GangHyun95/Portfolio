@@ -1,46 +1,43 @@
-# Getting Started with Create React App
+## 시연 페이지
+[Live Demo](https://portfolio-hyuns-projects-836af3ba.vercel.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 프로젝트 소개
+<p>
+    React와 TypeScript를 이용하여 포트폴리오용 반응형 웹사이트를 제작했습니다.
+</p>
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+## 기술 스택
 
-### `yarn start`
+| JavaScript | TypeScript |  React   |
+| :--------: | :--------: | :------: |
+|   ![js]    |   ![ts]    | ![react] |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 주요 기능
 
-### `yarn test`
+### 기능 1
+<p>React Query를 이용해 반복적인 데이터 요청을 방지하고, 데이터를 효율적으로 캐싱하여 관리했습니다.</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 기능 2
+<p>Home 컴포넌트에서는 useState, useEffect, 그리고 setTimeout을 사용하여 텍스트 타이핑 효과를 구현하였습니다.</p>
 
-### `yarn build`
+### 기능 3
+<p>Project 컴포넌트에서는 추가와 수정이 용이하도록 JSON 데이터를 만들어, 해당 데이터를 패치하여 프로젝트 정보를 렌더링하도록 구현했습니다.</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 기능 4
+<p>Blog 컴포넌트에서는 Tistory RSS를 이용하여 최근 작성한 블로그 글 10개를 표시하였습니다.</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 기능 5
+<p>Light 모드와 Dark 모드를 Context API를 이용해 구현했습니다.</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<!-- Stack Icon Refernces -->
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[js]: /stacks/javascript.svg
+[ts]: /stacks/typescript.svg
+[react]: /stacks/react.svg
