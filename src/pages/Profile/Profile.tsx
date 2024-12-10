@@ -111,6 +111,10 @@ export default function Profile() {
                                 <p className={styles.title}>어느정도 사용할 수 있어요.</p>
                                 <ul className={styles['skill-list']}>
                                     <li className={styles['skill-item']}>
+                                        <img className={styles['skill-img']} src="/assets/images/nextjs.svg" alt="nextjs" />
+                                        <span>Next.js</span>
+                                    </li>
+                                    <li className={styles['skill-item']}>
                                         <img className={styles['skill-img']} src="/assets/images/tailwind.svg" alt="tailwind" />
                                         <span>Tailwind</span>
                                     </li>
@@ -144,10 +148,6 @@ export default function Profile() {
                             <article className={styles.skill}>
                                 <p className={styles.title}>현재 공부 중이에요</p>
                                 <ul className={styles['skill-list']}>
-                                    <li className={styles['skill-item']}>
-                                        <img className={styles['skill-img']} src="/assets/images/nextjs.svg" alt="nextjs" />
-                                        <span>Next.js</span>
-                                    </li>
                                 </ul>
                             </article>
                         </div>
