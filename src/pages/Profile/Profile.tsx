@@ -143,13 +143,21 @@ export default function Profile() {
                                         <img className={styles['skill-img']} src="/assets/images/bootstrap.svg" alt="bootstrap" />
                                         <span>Bootstrap</span>
                                     </li>
+                                    <li className={styles['skill-item']}>
+                                        <img className={styles['skill-img']} src="/assets/images/prisma.svg" alt="prisma" />
+                                        <span>Prisma</span>
+                                    </li>
+                                    <li className={styles['skill-item']}>
+                                        <img className={styles['skill-img']} src="/assets/images/mongodb.svg" alt="mongodb" />
+                                        <span>MongoDB</span>
+                                    </li>
                                 </ul>
                             </article>
-                            <article className={styles.skill}>
+                            {/* <article className={styles.skill}>
                                 <p className={styles.title}>현재 공부 중이에요</p>
                                 <ul className={styles['skill-list']}>
                                 </ul>
-                            </article>
+                            </article> */}
                         </div>
                     </li>
                 </ul>
